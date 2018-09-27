@@ -6,4 +6,4 @@ variable "count" {
 
 
 variable "jumphost-sg" {
- default = "sg-1
+ default = "sg-123"
