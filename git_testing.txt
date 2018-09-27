@@ -1,0 +1,240 @@
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Vikas_Bhatt>git --version
+git version 2.19.0.windows.1
+
+C:\Users\Vikas_Bhatt>d:\
+'d:\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Vikas_Bhatt>d:
+
+D:\>dir
+ Volume in drive D has no label.
+ Volume Serial Number is D0E8-EA28
+
+ Directory of D:\
+
+30-05-2018  14:46    <DIR>          D-Drive
+26-09-2018  16:14    <DIR>          Important
+24-09-2018  10:40    <DIR>          JFL-HR Documents
+27-09-2018  16:27    <DIR>          MailsFrom_Dec2016
+27-09-2018  16:28     3,295,552,512 MailsFrom_Dec2017.pst
+29-01-2018  12:29    <DIR>          New folder
+27-09-2018  15:30    <DIR>          testing
+               1 File(s)  3,295,552,512 bytes
+               6 Dir(s)  124,358,406,144 bytes free
+
+D:\>cd testing
+
+D:\testing>dir
+ Volume in drive D has no label.
+ Volume Serial Number is D0E8-EA28
+
+ Directory of D:\testing
+
+27-09-2018  15:30    <DIR>          .
+27-09-2018  15:30    <DIR>          ..
+27-09-2018  15:32    <DIR>          terraform-git
+               0 File(s)              0 bytes
+               3 Dir(s)  124,358,406,144 bytes free
+
+D:\testing>cd terraform-git
+
+D:\testing\terraform-git>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\testing\terraform-git>git clone https://github.com/vikasbhatt1981/terraform.git
+Cloning into 'terraform'...
+remote: Enumerating objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7
+Unpacking objects: 100% (7/7), done.
+
+D:\testing\terraform-git>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\testing\terraform-git>dir
+ Volume in drive D has no label.
+ Volume Serial Number is D0E8-EA28
+
+ Directory of D:\testing\terraform-git
+
+27-09-2018  16:31    <DIR>          .
+27-09-2018  16:31    <DIR>          ..
+27-09-2018  16:31    <DIR>          terraform
+27-09-2018  15:33                83 variable.tf
+               1 File(s)             83 bytes
+               3 Dir(s)  124,358,361,088 bytes free
+
+D:\testing\terraform-git>cd terraform
+
+D:\testing\terraform-git\terraform>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        variable.tf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\testing\terraform-git\terraform>git add variable.tf
+warning: LF will be replaced by CRLF in variable.tf.
+The file will have its original line endings in your working directory
+
+D:\testing\terraform-git\terraform>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   variable.tf
+
+
+D:\testing\terraform-git\terraform>git commit -m"add to my repository"
+[master d4d01d4] add to my repository
+ Committer: Vikas Bhatt <Vikas_Bhatt@JUBLCORP.COM>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+)
+ create mode 100644 variable.tf
+
+D:\testing\terraform-git\terraform>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 355 bytes | 177.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/vikasbhatt1981/terraform.git
+   3d7cafe..d4d01d4  master -> master
+
+D:\testing\terraform-git\terraform>dir
+ Volume in drive D has no label.
+ Volume Serial Number is D0E8-EA28
+
+ Directory of D:\testing\terraform-git\terraform
+
+27-09-2018  16:38    <DIR>          .
+27-09-2018  16:38    <DIR>          ..
+27-09-2018  16:31                56 README.md
+27-09-2018  15:33                83 variable.tf
+               2 File(s)            139 bytes
+               2 Dir(s)  124,358,098,944 bytes free
+
+D:\testing\terraform-git\terraform>cd ..
+
+D:\testing\terraform-git>cd ..
+
+D:\testing>cd terraform-git-pull
+
+D:\testing\terraform-git-pull>git pull
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\testing\terraform-git-pull>git clone https://github.com/vikasbhatt1981/terraform.git
+Cloning into 'terraform'...
+remote: Enumerating objects: 10, done.
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 10
+Unpacking objects: 100% (10/10), done.
+
+D:\testing\terraform-git-pull>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\testing\terraform-git-pull>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\testing\terraform-git-pull>cd terraform
+
+D:\testing\terraform-git-pull\terraform>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   variable.tf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\testing\terraform-git-pull\terraform>git add variable.tf
+
+D:\testing\terraform-git-pull\terraform>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   variable.tf
+
+
+D:\testing\terraform-git-pull\terraform>git commit -m"made changes"
+[master 419dd06] made changes
+ Committer: Vikas Bhatt <Vikas_Bhatt@JUBLCORP.COM>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\testing\terraform-git-pull\terraform>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 159.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vikasbhatt1981/terraform.git
+   d4d01d4..419dd06  master -> master
+
+D:\testing\terraform-git-pull\terraform>cd ..
+
+D:\testing\terraform-git-pull>cd ..
+
+D:\testing>cd terraform-git
+
+D:\testing\terraform-git>cd terraform
+
+D:\testing\terraform-git\terraform>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+D:\testing\terraform-git\terraform>git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vikasbhatt1981/terraform
+   d4d01d4..419dd06  master     -> origin/master
+Updating d4d01d4..419dd06
+Fast-forward
+ variable.tf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\testing\terraform-git\terraform>
